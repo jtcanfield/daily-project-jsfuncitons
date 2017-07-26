@@ -8,7 +8,7 @@ function max(num1, num2){
   } else if (num1 > num2){
     return num1
   } else if (num2 > num1){
-    return num1
+    return num2
   } else {
     return "Numbers are Invalid"
   }
@@ -20,7 +20,7 @@ console.log(max(4, 5));
 // Then, write and example of using the function.
 
 function maxOfThree(num1, num2, num3){
-  return Math.max(num1, num2, num3);//Math.max returns the largest of a list of numbers
+  return "The largest of the three numbers is " + Math.max(num1, num2, num3);//Math.max returns the largest of a list of numbers
 }
 console.log(maxOfThree(6, 8, 2));
 
@@ -48,7 +48,7 @@ function sum(num1, num2){
   } else if (typeof num1 !=='number' || typeof num2 !=='number'){
     return "This argument only takes numbers"
   } else if (num1, num2){
-    return (num1 * num2)
+    return "The sum of the two numbers is " + (num1 * num2)
   } else {
     return "Invalid"
   }
@@ -64,7 +64,7 @@ function avg(num1, num2, num3){
   } else if (typeof num1 !=='number' || typeof num2 !=='number' || typeof num3 !=='number'){
     return "This argument only takes numbers"
   } else if (num1, num2, num3){
-    return (num1 * num2 * num3)
+    return "The Average of the three numbers is " + (num1 * num2 * num3)
   } else {
     return "Invalid"
   }
@@ -75,8 +75,14 @@ console.log(avg(2, 4, 8));
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-function getLength()
-
+function getLength(string){
+  if (typeof string !=='string'){
+    return "This is not a string"
+  } else {
+    return "The String is " + string.length + " characters long."
+  }
+}
+console.log(getLength("hello there"));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
