@@ -42,19 +42,40 @@ console.log(isVowel("a"));
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
 // Then, write and example of using the function.
-
-
+function sum(num1, num2){
+  if (arguments.length !== 2){
+    return "This argument only takes 2 numbers"
+  } else if (typeof num1 !=='number' || typeof num2 !=='number'){
+    return "This argument only takes numbers"
+  } else if (num1, num2){
+    return (num1 * num2)
+  } else {
+    return "Invalid"
+  }
+}
+console.log(sum(3, 4));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
 // Then, write and example of using the function.
-
+function avg(num1, num2, num3){
+  if (arguments.length !== 3){
+    return "This argument only takes 3 numbers"
+  } else if (typeof num1 !=='number' || typeof num2 !=='number' || typeof num3 !=='number'){
+    return "This argument only takes numbers"
+  } else if (num1, num2, num3){
+    return (num1 * num2 * num3)
+  } else {
+    return "Invalid"
+  }
+}
+console.log(avg(2, 4, 8));
 
 
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // Then, write and example of using the function.
-
+function getLength()
 
 
 // 7.
