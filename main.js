@@ -3,7 +3,9 @@
 // Then, write and example of using the function.
 
 function max(num1, num2){
-  if (num1 > num2){
+  if (num1 === num2){
+    return "Numbers are equal"
+  } else if (num1 > num2){
     return num1
   } else if (num2 > num1){
     return num1
@@ -11,25 +13,31 @@ function max(num1, num2){
     return "Numbers are Invalid"
   }
 }
-console.log(max(6, 5));
+console.log(max(4, 5));
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // Then, write and example of using the function.
 
-function maxOfThree(){
-    // Your answer here
+function maxOfThree(num1, num2, num3){
+  return Math.max(num1, num2, num3);//Math.max returns the largest of a list of numbers
 }
+console.log(maxOfThree(6, 8, 2));
 
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // Then, write and example of using the function.
 
-function isVowel(char){
-    // Your answer here
+function isVowel(character){
+    let char = character.toLowerCase();
+    if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+      return true
+    } else {
+      return false
+    }
 }
-
+console.log(isVowel("a"));
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
