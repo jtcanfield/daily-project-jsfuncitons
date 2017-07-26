@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+var exercises = [];
 // 1.
 // Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in JavaScript.
 // Then, write and example of using the function.
@@ -13,7 +16,8 @@ function max(num1, num2){
     return "Numbers are Invalid"
   }
 }
-console.log(max(4, 5));
+// console.log(max(4, 5));
+exercises.push(max(4,5));
 
 // 2.
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
@@ -22,8 +26,8 @@ console.log(max(4, 5));
 function maxOfThree(num1, num2, num3){
   return "The largest of the three numbers is " + Math.max(num1, num2, num3);//Math.max returns the largest of a list of numbers
 }
-console.log(maxOfThree(6, 8, 2));
-
+// console.log(maxOfThree(6, 8, 2));
+exercises.push(maxOfThree(6, 8, 2));
 
 // 3.
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -37,7 +41,8 @@ function isVowel(character){
       return false
     }
 }
-console.log(isVowel("a"));
+// console.log(isVowel("a"));
+exercises.push(isVowel("a"));
 
 // 4.
 // Write a function called `sum` that takes two parameters and returns the sum of those 2 numbers.
@@ -53,7 +58,8 @@ function sum(num1, num2){
     return "Invalid"
   }
 }
-console.log(sum(3, 4));
+// console.log(sum(3, 4));
+exercises.push(sum(3, 4));
 
 // 5.
 // Write a function named `avg` that takes 3 parameters and returns the average of those 3 numbers.
@@ -69,7 +75,8 @@ function avg(num1, num2, num3){
     return "Invalid"
   }
 }
-console.log(avg(2, 4, 8));
+// console.log(avg(2, 4, 8));
+exercises.push(avg(2, 4, 8));
 
 
 // 6.
@@ -82,7 +89,8 @@ function getLength(string){
     return "The String is " + string.length + " characters long."
   }
 }
-console.log(getLength("hello there"));
+// console.log(getLength("hello there"));
+exercises.push(getLength("hello there"));
 
 // 7.
 // Write a function called `greaterThan` that takes two parameters
@@ -98,8 +106,8 @@ function greaterThan(num1, num2){
     return "Numbers are Invalid"
   }
 }
-console.log(greaterThan(7, 9));
-
+// console.log(greaterThan(7, 9));
+exercises.push(greaterThan(7, 9));
 
 // 8.
 // Write a function called `greet` that takes a
@@ -110,7 +118,8 @@ console.log(greaterThan(7, 9));
 function greet(name){
   return "Hello, " + name + "!"
 }
-console.log(greet("Jonathan"));
+// console.log(greet("Jonathan"));
+exercises.push(greet("Jonathan"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -127,4 +136,15 @@ function madlib(word1, word2, word3, word4){
     return "A man named " + word1 + " went to the " + word2 + " to get some " + word3 + " so he can " + word4 + "."
   }
 }
-console.log(madlib("Josh", "store", "bread", "eat"));
+// console.log(madlib("Josh", "store", "bread", "eat"));
+exercises.push(madlib("Josh", "store", "bread", "eat"));
+
+for (let i = 0; i < exercises.length; i++) {
+  // $("body").append("<h"+(i+1).toString()+"></h"+(i+1).toString()+">");
+  $("body").append("<h1 style='color:red;font-family:sans-serif;border-bottom:2px solid maroon;' id='"+i.toString()+"'></h1>");
+  console.log(i, exercises[i]);
+  $("#"+i.toString()).html((i+1).toString() + ". " + exercises[i]);
+};
+
+// $("h1").html(exercises[0]);
+});
