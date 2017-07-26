@@ -120,3 +120,11 @@ console.log(greet("Jonathan"));
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // Then, write and example of using the function.
+function madlib(word1, word2, word3, word4){
+  if (arguments.length !== 4){
+    return "Please use exactly 4 words in '' quotes"
+  } else {
+    return "A man named " + word1 + " went to the " + word2 + " to get some " + word3 + " so he can " + word4 + "."
+  }
+}
+console.log(madlib("Josh", "store", "bread", "eat"));
