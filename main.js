@@ -108,11 +108,9 @@ console.log(greaterThan(7, 9));
 // is the parameter that was passed in.
 // Then, write and example of using the function.
 function greet(name){
-  // if (typeof name !=='string'){
-  //   return "This is not a string"
-  // }
+  return "Hello, " + name + "!"
 }
-
+console.log(greet("Jonathan"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
