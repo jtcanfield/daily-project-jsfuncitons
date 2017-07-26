@@ -89,7 +89,16 @@ console.log(getLength("hello there"));
 // and returns `true` if the second parameter is greater than the first.
 // Otherwise the function should return `false`.
 // Then, write and example of using the function.
-
+function greaterThan(num1, num2){
+  if (num1 === num2){
+    return "Numbers are equal"
+  } else if (num1, num2){
+    return "The greatest parameter is " + Math.max(num1, num2);
+  } else {
+    return "Numbers are Invalid"
+  }
+}
+console.log(greaterThan(7, 9));
 
 
 // 8.
@@ -98,7 +107,11 @@ console.log(getLength("hello there"));
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // Then, write and example of using the function.
-
+function greet(name){
+  // if (typeof name !=='string'){
+  //   return "This is not a string"
+  // }
+}
 
 
 // 9.
